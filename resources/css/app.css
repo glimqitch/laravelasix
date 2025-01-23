@@ -1,0 +1,112 @@
+    /* Fons net i modern */
+body {
+    background-color: #f4f7fb; /* Color de fons suau */
+    color: #333; /* Color de text fosc per facilitar la lectura */
+    font-family: 'Figtree', sans-serif; /* Font lleugera i moderna */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Títols amb estil senzill */
+h1, h2, h3 {
+    font-family: 'Figtree', sans-serif;
+    color: #1E40AF; /* Blau fosc per a títols */
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #4B5563; /* Gris fosc per al text */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Enllaços amb estil uniforme */
+a {
+    text-decoration: none;
+    color: #3B82F6; /* Blau viu per als enllaços */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2563EB; /* Blau més fosc en hover */
+    color: white;
+}
+
+/* Botons amb estil uniforme */
+.btn {
+    background-color: #3B82F6; /* Blau viu per als botons */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2563EB; /* Blau més fosc al passar el cursor */
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #1D4ED8; /* Blau més fosc al fer clic */
+    transform: scale(0.98);
+}
+
+/* Estils per a la navegació i altres components */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #1E40AF;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background-color: #f3f4f6;
+    border-radius: 5px;
+}
+
+/* Resposiu per mòbils */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
